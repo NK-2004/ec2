@@ -1,1 +1,16 @@
 
+{
+  "family": "my-node-app-task",
+  "containerDefinitions": [
+    {
+      "name": "my-node-app",
+      "image": "your-dockerhub-username/your-repo-name:latest",
+      "portMappings": [
+        {
+          "containerPort": 3000
+        }
+      ],
+      "essential": true
+    }
+  ]
+}
